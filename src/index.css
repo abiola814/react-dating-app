@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+body {
+	margin: 0 auto;
+	min-width: 375px;
+	height: 100vh;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+
+.online {
+	@apply grid grid-flow-col gap-4 h-[88px] items-center justify-items-end overflow-x-scroll scroll-smooth  touch-pan-x hover:overflow-x-scroll snap-center;
+}
+.online div:nth-child(1) {
+	margin-left: 27px;
+}
 .gradient {
 	background-image: linear-gradient(91.34deg, #4b164c 4.28%, #730075 102.07%);
+}
+.not-read,
+.read {
+	@apply text-sm leading-3;
+}
+.not-read {
+	color: rgba(0, 0, 0, 0.78);
+}
+.read {
+	color: rgba(41, 37, 46, 0.33);
 }

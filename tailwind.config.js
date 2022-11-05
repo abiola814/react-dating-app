@@ -14,6 +14,10 @@ module.exports = {
 			borderColor: {
 				primary: "#9B139D",
 			},
+			fontFamily: {
+				poppins: ["Poppins", "sans-serif"],
+				raleway: "Raleway",
+			},
 		},
 	},
 	plugins: [],
