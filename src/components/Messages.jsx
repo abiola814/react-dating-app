@@ -1,8 +1,8 @@
 import { MASSAGES_ONLINE as message_data } from "../constant";
 const Messages = () => {
 	return (
-		<section className="font-raleway text-base leading-4 text-[#29252E] bg-[#E5E5E5]">
-			<aside className="overflow-x-hidden min-w-[375px]">
+		<section className="font-raleway text-base leading-4 text-[#29252E]">
+			<aside className="overflow-x-hidden max-w-[375px]">
 				<h4 className="ml-[27px]">Online</h4>
 				<div className="online">
 					{message_data.map((info, i) => {
@@ -11,7 +11,7 @@ const Messages = () => {
 							info.online && (
 								<div className="relative w-[49px] h-[49px]" key={i}>
 									<info.img className="w-full h-full" />
-									<div className="h-[13px] w-[13px] absolute top-[-5px] right-1 bg-green-600 rounded-full border-[3px] border-white"></div>
+									<div className="h-[13px] w-[13px] absolute top-[-1px] right-0 bg-green-600 rounded-full border-[3px] border-white"></div>
 								</div>
 							)
 						);
@@ -29,7 +29,7 @@ const Messages = () => {
 										<div className="relative w-[49px] h-[49px]">
 											<info.img className="w-full h-full" />
 											{info.online && (
-												<div className="h-[13px] w-[13px] absolute top-[-5px] right-1 bg-green-600 rounded-full border-[3px] border-white"></div>
+												<div className="h-[13px] w-[13px] absolute top-[-1px] right-0 bg-green-600 rounded-full border-[3px] border-white"></div>
 											)}
 										</div>
 										<div className="flex flex-col gap-[3px] self-start mt-2">

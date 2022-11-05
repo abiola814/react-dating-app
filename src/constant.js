@@ -1,6 +1,6 @@
 import { ReactComponent as Online1 } from "../src/assets/images/online_image1.svg";
 import { ReactComponent as Online2 } from "../src/assets/images/online_image2.svg";
-import { ReactComponent as Online3 } from "../src/assets/images/online_image3.svg";
+import { ReactComponent as Online3 } from "../src/assets/images/online_image4.svg";
 import { ReactComponent as Online4 } from "../src/assets/images/online_image4.svg";
 import { ReactComponent as Online5 } from "../src/assets/images/online_image5.svg";
 import { ReactComponent as Online6 } from "../src/assets/images/online_image6.svg";
