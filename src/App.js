@@ -1,5 +1,5 @@
-import Messages from "./components/Messages";
+import Rootrouter from "./routes/Rootrouter";
 
 export default function App() {
-	return <Messages />;
+	return <Rootrouter />;
 }

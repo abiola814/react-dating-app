@@ -1,5 +1,6 @@
-import { MASSAGES_ONLINE as message_data } from "../constant";
-const Messages = () => {
+import { Link } from "react-router-dom";
+
+const Messages = ({ message_data }) => {
 	return (
 		<section className="font-raleway text-base leading-4 text-[#29252E]">
 			<aside className="overflow-x-hidden max-w-[375px]">
@@ -10,7 +11,11 @@ const Messages = () => {
 							!info.messages &&
 							info.online && (
 								<div className="relative w-[49px] h-[49px]" key={i}>
-									<info.img className="w-full h-full" />
+									<img
+										src={info.img}
+										alt={info.alt}
+										className="w-full h-full"
+									/>
 									<div className="h-[13px] w-[13px] absolute top-[-1px] right-0 bg-green-600 rounded-full border-[3px] border-white"></div>
 								</div>
 							)
@@ -24,10 +29,18 @@ const Messages = () => {
 					{message_data.map((info, i) => {
 						return (
 							info.messages && (
-								<div className="flex mt-3 items-center justify-between" key={i}>
+								<Link
+									to={`/${info.id}`}
+									className="flex mt-3 items-center justify-between"
+									key={i}
+								>
 									<div className="flex gap-[21px] items-center ">
 										<div className="relative w-[49px] h-[49px]">
-											<info.img className="w-full h-full" />
+											<img
+												src={info.img}
+												alt={info.img_alt}
+												className="w-full h-full"
+											/>
 											{info.online && (
 												<div className="h-[13px] w-[13px] absolute top-[-1px] right-0 bg-green-600 rounded-full border-[3px] border-white"></div>
 											)}
@@ -50,7 +63,7 @@ const Messages = () => {
 											{info.messages.length}
 										</div>
 									)}
-								</div>
+								</Link>
 							)
 						);
 					})}
