@@ -140,3 +140,68 @@ export const MASSAGES_ONLINE = [
 		read: true,
 	},
 ];
+
+export const INTERESTS = [
+	"⚽️ Football",
+	"🍃  Nature",
+	"🗣 Language",
+	"📸 Photography",
+	"✍🏻 Writing",
+	"✍🏻 Writing",
+	"⚽️ Football",
+	"🍃  Nature",
+	"🗣 Language",
+	"📸 Photography",
+	"✍🏻 Writing",
+	"✍🏻 Writing",
+	"⚽️ Football",
+	"🍃  Nature",
+	"🗣 Language",
+	"📸 Photography",
+	"✍🏻 Writing",
+	"✍🏻 Writing",
+];
+
+// selections are replicated to allow for mapping
+export const SELCECTIONS = [
+	[
+		{ name: "green", label: "Answer 01" },
+		{ name: "blue", label: "Answer 02" },
+		{ name: "red", label: "Answer 03" },
+		{ name: "yellow", label: "Answer 04" },
+		{ name: "orange", label: "Answer 05" },
+		{ name: "pink", label: "Answer 06" },
+		{ name: "purple", label: "Answer 07" },
+		{ name: "grey", label: "Answer 08" },
+	],
+	[
+		{ name: "green", label: "Answer 01" },
+		{ name: "blue", label: "Answer 02" },
+		{ name: "red", label: "Answer 03" },
+		{ name: "yellow", label: "Answer 04" },
+		{ name: "orange", label: "Answer 05" },
+		{ name: "pink", label: "Answer 06" },
+		{ name: "purple", label: "Answer 07" },
+		{ name: "grey", label: "Answer 08" },
+	],
+	[
+		{ name: "green", label: "Answer 01" },
+		{ name: "blue", label: "Answer 02" },
+		{ name: "red", label: "Answer 03" },
+		{ name: "yellow", label: "Answer 04" },
+		{ name: "orange", label: "Answer 05" },
+		{ name: "pink", label: "Answer 06" },
+		{ name: "purple", label: "Answer 07" },
+		{ name: "grey", label: "Answer 08" },
+	],
+	[
+		{ name: "green", label: "Answer 01" },
+		{ name: "blue", label: "Answer 02" },
+		{ name: "red", label: "Answer 03" },
+		{ name: "yellow", label: "Answer 04" },
+		{ name: "orange", label: "Answer 05" },
+		{ name: "pink", label: "Answer 06" },
+		{ name: "purple", label: "Answer 07" },
+		{ name: "grey", label: "Answer 08" },
+	],
+];
