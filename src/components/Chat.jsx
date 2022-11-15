@@ -1,13 +1,18 @@
-import { Link, useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
 
-const Chat = ({ message_data }) => {
+export const Chat = ({ message_data }) => {
 	const { id } = useParams();
-	console.log(id);
-	console.log(message_data);
-	const [currentChat] = message_data.filter(
-		(message) => message.id === Number(id)
-	);
+	const [currentChat, setCurrentChat] = useState(null);
 
+	useEffect(() => {
+		(() => {
+			const chat = message_data.find((m) => m.id === Number(id));
+			setCurrentChat(chat);
+		})();
+	}, [id, message_data, setCurrentChat]);
+
+	if (!currentChat) return <p>loading...</p>;
 	return (
 		<div>
 			<div className="messagebox header">
