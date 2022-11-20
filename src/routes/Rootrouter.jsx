@@ -8,6 +8,7 @@ const Rootrouter = () => {
 	return (
 		<Router>
 			<Routes>
+		{/* this is the root route so i don't knoww if the propblem is from the routing*/}
 				<Route path="/*" element={<Messages message_data={message_data} />} />
 				<Route path="/interests" element={<Interests />} />
 				<Route path="/select" element={<Questions />} />
