@@ -26,6 +26,8 @@ const Messages = ({ message_data }) => {
 			<aside className=" mx-[27px]">
 				<h4>My chats</h4>
 				<div className="max-h-[486px] overflow-scroll mt-[21px] flex flex-col gap-5">
+					
+					{/* wondering if this is where the issues is from... looping and adding each data?*/}
 					{message_data.map((info, i) => {
 						return (
 							info.messages && (
